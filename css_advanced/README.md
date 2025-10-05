@@ -14,4 +14,4 @@ This project builds upon the **HTML Advanced** project by applying complete styl
 - **Fonts:** [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro) and Spin Cycle OT
 - **Images:** Downloaded from ALX-provided assets
 
-## 🧩 Project Structure
+## Project Structure
