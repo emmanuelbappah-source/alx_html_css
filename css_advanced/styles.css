@@ -1,0 +1,109 @@
+/* ================================
+   STAGE 1: BASE STYLES
+   Author: Emmanuel B. Appah
+   Project: SmileSchool (ALX Advanced HTML)
+   ================================ */
+
+/* GOOGLE FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  background-color: #071629;
+  line-height: 1.6;
+}
+
+/* HEADER & NAVBAR */
+header {
+  background-color: #071629;
+  padding: 20px 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #C271FF;
+}
+
+/* HERO SECTION */
+main section:first-of-type {
+  background: radial-gradient(circle at center, #000000 0%, #071629 100%);
+  text-align: center;
+  padding: 120px 20px;
+}
+
+main section:first-of-type h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main section:first-of-type span {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 10px;
+  color: #C271FF;
+}
+
+main section:first-of-type button {
+  background-color: #C271FF;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 40px;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main section:first-of-type button:hover {
+  background-color: #a85de2;
+}
+
+/* RESPONSIVE NAV */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 20px;
+  }
+
+  main section:first-of-type h1 {
+    font-size: 48px;
+  }
+
+  main section:first-of-type span {
+    display: block;
+    margin: 10px 0;
+  }
+}
