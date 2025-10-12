@@ -21,7 +21,7 @@ body {
   line-height: 1.6;
 }
 
-/* HEADER & NAVBAR */
+/* HEADER */
 header {
   background-color: #071629;
   padding: 20px 60px;
@@ -56,29 +56,28 @@ nav ul li a:hover {
 }
 
 /* HERO SECTION */
-main section:first-of-type {
-  background-image: url('images/Object.png');
+.hero {
+  background: linear-gradient(rgba(7,22,41,0.7), rgba(7,22,41,0.7)), url('images/Object.png');
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 100px 10px;
+  padding: 120px 20px;
 }
 
-
-main section:first-of-type h1 {
+.hero-content h1 {
   font-size: 64px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-main section:first-of-type span {
+.hero-tags span {
   font-size: 24px;
   font-weight: 600;
-  margin: 0 10px;
-  color: #C271FF;
+  margin: 0 15px;
+  color: #fff;
 }
 
-main section:first-of-type button {
+.hero button {
   background-color: #C271FF;
   border: none;
   color: #fff;
@@ -91,22 +90,296 @@ main section:first-of-type button {
   transition: background-color 0.3s ease;
 }
 
-main section:first-of-type button:hover {
+.hero button:hover {
   background-color: #a85de2;
 }
 
-/* RESPONSIVE NAV */
+/* INSTRUCTORS SECTION */
+.instructors {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #071629;
+}
+
+.instructors h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.instructors h2 span {
+  color: #C271FF;
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.profile h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile p {
+  font-style: italic;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial {
+  background-color: #C271FF;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.testimonial blockquote {
+  font-size: 20px;
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.testimonial h3 {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.testimonial p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* POPULAR TUTORIALS */
+.tutorials {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.tutorials h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.tutorial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.tutorial-card {
+  background-color: #071629;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+}
+
+.tutorial-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.tutorial-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.tutorial-card p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.author h4 {
+  font-size: 14px;
+}
+
+.stars {
+  color: #C271FF;
+  margin-bottom: 10px;
+}
+
+.duration {
+  font-size: 14px;
+  color: #999;
+}
+
+/* MEMBERSHIP */
+.membership {
+  background-color: #071629;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.membership h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.membership-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.membership-grid img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.membership-grid h3 {
+  font-size: 18px;
+  color: #C271FF;
+}
+
+.membership-grid p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.membership button {
+  background-color: #C271FF;
+  border: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.membership button:hover {
+  background-color: #a85de2;
+}
+
+/* FAQ */
+.faq {
+  background-color: #fff;
+  color: #071629;
+  padding: 100px 60px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.faq-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+
+.faq-col {
+  max-width: 400px;
+}
+
+.faq h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.faq p {
+  margin-bottom: 25px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* FOOTER */
+footer {
+  background-color: #071629;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+
+.footer-top img {
+  width: 120px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #C271FF;
+}
+
+footer p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* RESPONSIVE NAV & LAYOUT */
 @media (max-width: 768px) {
   nav ul {
     gap: 20px;
   }
 
-  main section:first-of-type h1 {
+  .hero-content h1 {
     font-size: 48px;
   }
 
-  main section:first-of-type span {
+  .hero-tags span {
     display: block;
     margin: 10px 0;
+  }
+
+  .profiles,
+  .membership-grid,
+  .tutorial-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-columns {
+    flex-direction: column;
+    align-items: center;
   }
 }
